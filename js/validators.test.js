@@ -19,3 +19,11 @@ test('validateName()', () => {
     error: 'Must not be empty',
   })
 })
+
+test('validateConfirmPassword()', () => {
+  result = validateConfirmPassword('123456a', '1234567a')
+  expect(result).toEqual({
+    valid: false,
+    error: 'Passwords must match',
+  })
+})
