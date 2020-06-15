@@ -6,4 +6,10 @@ import {
 
 let result
 
-test('validateName()', () => {})
+test('validateName()', () => {
+  result = validateName('John Doe')
+  expect(result).not.toEqual({
+    valid: true,
+    error: 'Must not be empty',
+  })
+})
