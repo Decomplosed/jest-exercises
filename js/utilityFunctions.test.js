@@ -17,4 +17,7 @@ test('checkIfEmpty()', () => {
 
   result = checkIfEmpty('John Doe')
   expect(result).toEqual({ valid: true })
+
+  result = checkIfEmpty('John')
+  expect(result.error).toBeUndefined()
 })
