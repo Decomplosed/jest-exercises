@@ -1,1 +1,5 @@
-import { validateName, validatePassword, validateEmail } from './validators'
+import {
+  validateName,
+  validateConfirmPassword,
+  validateEmail,
+} from './validators'
