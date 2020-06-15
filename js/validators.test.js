@@ -3,3 +3,7 @@ import {
   validateConfirmPassword,
   validateEmail,
 } from './validators'
+
+let result
+
+test('validateName()', () => {})
