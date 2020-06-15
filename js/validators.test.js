@@ -12,4 +12,10 @@ test('validateName()', () => {
     valid: true,
     error: 'Must not be empty',
   })
+
+  result = validateName(' ')
+  expect(result).toEqual({
+    valid: true,
+    error: 'Must not be empty',
+  })
 })
