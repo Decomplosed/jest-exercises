@@ -12,7 +12,9 @@ test('isEmpty()', () => {
 
 test('checkIfEmpty()', () => {
   result = checkIfEmpty(' ')
-
   let expectedResult = { valid: false, error: 'Must not be empty' }
   expect(result).toEqual(expectedResult)
+
+  result = checkIfEmpty('John Doe')
+  expect(result).toEqual({ valid: true })
 })
