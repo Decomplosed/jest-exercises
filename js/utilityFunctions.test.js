@@ -1,7 +1,9 @@
 import { isEmpty, checkIfEmpty, setValidationRes } from './utilityFunctions'
 
+let result
+
 test('isEmpty()', () => {
-  let result = isEmpty('')
+  result = isEmpty('')
   expect(result).toBeTruthy()
 
   result = isEmpty(' ')
