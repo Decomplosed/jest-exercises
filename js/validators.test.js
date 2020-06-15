@@ -27,3 +27,11 @@ test('validateConfirmPassword()', () => {
     error: 'Passwords must match',
   })
 })
+
+test('validateEmail()', () => {
+  result = validateEmail('johndoe@email')
+  expect(result).toEqual({
+    valid: false,
+    error: 'Must be a valid email address',
+  })
+})
