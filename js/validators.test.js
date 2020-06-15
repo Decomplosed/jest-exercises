@@ -15,7 +15,7 @@ test('validateName()', () => {
 
   result = validateName(' ')
   expect(result).toEqual({
-    valid: true,
+    valid: false,
     error: 'Must not be empty',
   })
 })
