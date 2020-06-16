@@ -49,5 +49,10 @@ test('Validating all fields', async () => {
   await page.type('input#email', 'johndoe@email.com')
   await page.click('input#firstName')
 
-  const invalidInput = await page.$eval('input.invalid', (input) => input)
+  try {
+    const invalidInput = await page.$eval('input.invalid', (input) => input)
+    expect(input).toBeUndefined()
+  } catch (err) {
+    expect(err).toBeDefined()
+  }
 })
