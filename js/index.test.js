@@ -7,4 +7,5 @@ test('Validating first name field', async () => {
     'file:///Users/Bart/Desktop/Courses/classed/jest-exercises/index.html'
 
   await page.click('input#firstName')
+  await page.type('input#firstName', ' ')
 })
