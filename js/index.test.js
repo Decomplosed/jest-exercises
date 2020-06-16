@@ -20,4 +20,5 @@ test('Validating first name field', async () => {
 
   await browser.close()
   await page.type('input#firstName', 'John')
+  await page.click('input#email')
 })
