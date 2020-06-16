@@ -47,4 +47,5 @@ test('Validating all fields', async () => {
   await page.type('input#confirmPassword', '123456a')
   await page.click('input#email')
   await page.type('input#email', 'johndoe@email.com')
+  await page.click('input#firsName')
 })
