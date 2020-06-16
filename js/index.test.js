@@ -9,4 +9,8 @@ test('Validating first name field', async () => {
   await page.click('input#firstName')
   await page.type('input#firstName', ' ')
   await page.click('input#lastName')
+  let firstNameInputClass = await page.$eval(
+    'input#firstName',
+    (input) => input.className
+  )
 })
