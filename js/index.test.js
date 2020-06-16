@@ -32,4 +32,6 @@ test('Validating first name field', async () => {
   await browser.close()
 })
 
-test('Validating all fields', async () => {})
+test('Validating all fields', async () => {
+  browser = await puppeteer.launch()
+})
