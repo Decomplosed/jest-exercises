@@ -41,4 +41,6 @@ test('Validating all fields', async () => {
   await page.type('input#firstName', 'John')
   await page.click('input#lastName')
   await page.type('input#lastName', 'Doe')
+  await page.click('input#password')
+  await page.type('input#password', '123456a')
 })
