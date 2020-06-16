@@ -18,7 +18,6 @@ test('Validating first name field', async () => {
 
   await page.click('input#firstName')
 
-  await browser.close()
   await page.type('input#firstName', 'John')
   await page.click('input#email')
 
@@ -27,4 +26,6 @@ test('Validating first name field', async () => {
     (input) => input.className
   )
   expect(firstNameInputClass).toBe('valid')
+
+  await browser.close()
 })
