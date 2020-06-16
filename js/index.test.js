@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer'
 
-test('Validating first name field', () => {
-  const browser = puppeteer.launch()
+test('Validating first name field', async () => {
+  const browser = await puppeteer.launch()
 })
