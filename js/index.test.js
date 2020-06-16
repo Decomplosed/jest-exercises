@@ -15,5 +15,8 @@ test('Validating first name field', async () => {
     (input) => input.className
   )
   expect(firstNameInputClass).toBe('invalid')
+
+  await page.click('input#firstName')
+
   await browser.close()
 })
