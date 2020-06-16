@@ -35,4 +35,5 @@ test('Validating first name field', async () => {
 test('Validating all fields', async () => {
   browser = await puppeteer.launch()
   const page = await browser.newPage()
+  await page.goto(app)
 })
