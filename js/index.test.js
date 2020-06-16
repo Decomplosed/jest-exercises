@@ -36,4 +36,7 @@ test('Validating all fields', async () => {
   browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto(app)
+
+  await page.click('input#firstName')
+  await page.type('input#firstName', 'John')
 })
