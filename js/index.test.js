@@ -13,4 +13,5 @@ test('Validating first name field', async () => {
     'input#firstName',
     (input) => input.className
   )
+  expect(firstNameInputClass).toBe('invalid')
 })
