@@ -83,4 +83,6 @@ test('Fetching success panel', async () => {
   await page.type('input#email', 'johndoe@email.com')
   await page.click('input#firstName')
   await page.click('button#formBtn')
+
+  let successPanel = await page.waitForSelector('div.card-panel')
 }, 10000)
