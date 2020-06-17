@@ -108,6 +108,8 @@ test('Validating the password and confirmPassowrd - valid', async () => {
 
   const invalidInput = await page.$eval('input.invalid', (input) => input)
   expect(invalidInput).toBeUndefined()
+
+  await browser.close()
 })
 
 test('Fetching success panel', async () => {
