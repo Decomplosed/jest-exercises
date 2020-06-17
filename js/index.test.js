@@ -82,4 +82,5 @@ test('Fetching success panel', async () => {
   await page.click('input#email')
   await page.type('input#email', 'johndoe@email.com')
   await page.click('input#firstName')
+  await page.click('button#formBtn')
 }, 10000)
