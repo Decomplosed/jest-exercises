@@ -102,7 +102,7 @@ test('Validating the password and confirmPassowrd - valid', async () => {
   await page.type('input#confirmPassword', '123456a')
 
   const invalidInput = await page.$eval('input.invalid', (input) => input)
-  expect(invalidInput).toBeUndefined()
+  expect(input).toBeUndefined()
 
   await browser.close()
 }, 10000)
@@ -120,6 +120,13 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
   await page.type('input#password', '123456a')
   await page.click('input#confirmPassword')
   await page.type('input#confirmPassword', '1234567a')
+
+  try {
+    const invalidInput = await page.$eval('input.invalid', (input) => input)
+    expect(input).toBeDefined()
+  } catch (err) {
+    expect(err).toBeUndefined()
+  }
 })
 
 test('Fetching success panel', async () => {
