@@ -63,5 +63,9 @@ test('Validating all fields', async () => {
 }, 10000)
 
 test('Fetching success panel', async () => {
-  browser = await puppeteer.launch()
+  browser = await puppeteer.launch({
+    headless: false,
+    slowMo: 35,
+    args: ['--window-size=1280,800'],
+  })
 }, 10000)
