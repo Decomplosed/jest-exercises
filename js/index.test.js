@@ -82,12 +82,8 @@ test('Validating lastName and firstName with invalid data', async () => {
   await page.type('input#email', 'johndoe@email.com')
   await page.click('input#firstName')
 
-  try {
-    const invalidInput = await page.$eval('input.invalid', (input) => input)
-    expect(input).toBeUndefined()
-  } catch (err) {
-    expect(err).toBeDefined()
-  }
+  const invalidInput = await page.$eval('input.invalid', (input) => input)
+  expect(invalidInput).toBeDefined()
 
   await browser.close()
 }, 10000)
