@@ -69,4 +69,5 @@ test('Fetching success panel', async () => {
     args: ['--window-size=1280,800'],
   })
   const page = await browser.newPage()
+  await page.goto(app)
 }, 10000)
