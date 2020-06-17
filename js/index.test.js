@@ -68,4 +68,5 @@ test('Fetching success panel', async () => {
     slowMo: 35,
     args: ['--window-size=1280,800'],
   })
+  const page = await browser.newPage()
 }, 10000)
