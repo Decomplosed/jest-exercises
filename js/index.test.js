@@ -60,4 +60,4 @@ test('Validating all fields', async () => {
   }
 
   await browser.close()
-})
+}, 10000)
