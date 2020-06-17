@@ -110,7 +110,7 @@ test('Validating the password and confirmPassowrd - valid', async () => {
   expect(invalidInput).toBeUndefined()
 
   await browser.close()
-})
+}, 10000)
 
 test('Fetching success panel', async () => {
   browser = await puppeteer.launch({
