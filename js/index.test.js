@@ -127,6 +127,8 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
   } catch (err) {
     expect(err).toBeUndefined()
   }
+
+  await browser.close()
 })
 
 test('Fetching success panel', async () => {
