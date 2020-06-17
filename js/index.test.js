@@ -106,6 +106,8 @@ test('Validating the password and confirmPassowrd - valid', async () => {
   await browser.close()
 }, 10000)
 
+test('Validating the password and confirmPassowrd - invalid', async () => {})
+
 test('Fetching success panel', async () => {
   browser = await puppeteer.launch({
     headless: false,
