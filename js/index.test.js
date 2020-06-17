@@ -100,6 +100,11 @@ test('Validating the password and confirmPassowrd - valid', async () => {
   await page.type('input#firstName', 'John')
   await page.click('input#lastName')
   await page.type('input#lastName', 'Doe')
+  await page.type('input#password', '123456a')
+  await page.click('input#confirmPassword')
+  await page.type('input#confirmPassword', '123456a')
+  await page.type('input#email', 'johndoe@email.com')
+  await page.click('input#firstName')
 })
 
 test('Fetching success panel', async () => {
