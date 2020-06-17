@@ -55,4 +55,6 @@ test('Validating all fields', async () => {
   } catch (err) {
     expect(err).toBeDefined()
   }
+
+  await browser.close()
 })
