@@ -62,7 +62,7 @@ test('Validating all fields', async () => {
   await browser.close()
 }, 10000)
 
-test('Validating all fields with invalid data', async () => {
+test('Validating lastName and firstName with invalid data', async () => {
   browser = await puppeteer.launch({
     headless: false,
     slowMo: 35,
