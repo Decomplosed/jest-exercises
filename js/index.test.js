@@ -93,6 +93,7 @@ test('Validating the password and confirmPassowrd - valid', async () => {
     headless: false,
     slowMo: 35,
   })
+  const page = await browser.newPage()
 })
 
 test('Fetching success panel', async () => {
