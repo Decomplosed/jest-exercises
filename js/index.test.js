@@ -112,6 +112,7 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
     slowMo: 35,
     args: ['--window-size=1280,800'],
   })
+  const page = await browser.newPage()
 })
 
 test('Fetching success panel', async () => {
