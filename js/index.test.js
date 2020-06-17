@@ -118,6 +118,8 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
 
   await page.click('input#password')
   await page.type('input#password', '123456a')
+  await page.click('input#confirmPassword')
+  await page.type('input#confirmPassword', '1234567a')
 })
 
 test('Fetching success panel', async () => {
