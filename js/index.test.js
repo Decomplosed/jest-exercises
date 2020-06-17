@@ -113,6 +113,7 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
     args: ['--window-size=1280,800'],
   })
   const page = await browser.newPage()
+  page.goto(app)
 })
 
 test('Fetching success panel', async () => {
