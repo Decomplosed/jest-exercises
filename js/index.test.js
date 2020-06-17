@@ -88,6 +88,8 @@ test('Validating lastName and firstName with invalid data', async () => {
   await browser.close()
 }, 10000)
 
+test('Validating the password and confirmPassowrd - valid', async () => {})
+
 test('Fetching success panel', async () => {
   browser = await puppeteer.launch({
     headless: false,
