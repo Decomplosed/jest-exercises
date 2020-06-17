@@ -33,7 +33,10 @@ test('Validating first name field', async () => {
 })
 
 test('Validating all fields', async () => {
-  browser = await puppeteer.launch()
+  browser = await puppeteer.launch({
+    headless: false,
+    slowMo: 35,
+  })
   const page = await browser.newPage()
   await page.goto(app)
 
