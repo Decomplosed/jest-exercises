@@ -115,6 +115,9 @@ test('Validating the password and confirmPassowrd - invalid', async () => {
   })
   const page = await browser.newPage()
   page.goto(app)
+
+  await page.click('input#password')
+  await page.type('input#password', '123456a')
 })
 
 test('Fetching success panel', async () => {
