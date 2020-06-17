@@ -73,7 +73,7 @@ test('Validating all fields with invalid data', async () => {
   await page.click('input#firstName')
   await page.type('input#firstName', ' ')
   await page.click('input#lastName')
-  await page.type('input#lastName', 'Doe')
+  await page.type('input#lastName', 'Doe3')
   await page.click('input#password')
   await page.type('input#password', '123456a')
   await page.click('input#confirmPassword')
