@@ -86,4 +86,6 @@ test('Fetching success panel', async () => {
 
   let successPanel = await page.waitForSelector('div.card-panel')
   expect(successPanel).toBeDefined()
+
+  await browser.close()
 }, 10000)
