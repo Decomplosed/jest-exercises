@@ -94,6 +94,7 @@ test('Validating the password and confirmPassowrd - valid', async () => {
     slowMo: 35,
   })
   const page = await browser.newPage()
+  page.goto(app)
 })
 
 test('Fetching success panel', async () => {
