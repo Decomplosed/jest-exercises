@@ -96,6 +96,7 @@ test('Validating the password and confirmPassowrd - valid', async () => {
   const page = await browser.newPage()
   page.goto(app)
 
+  await page.click('input#password')
   await page.type('input#password', '123456a')
   await page.click('input#confirmPassword')
   await page.type('input#confirmPassword', '123456a')
